@@ -1,0 +1,10 @@
+body{
+    /* background-image: linear-gradient(to right top, red, blue); */
+    /* background-image: radial-gradient(blue 5%, red 10%, yellow) ; */
+    background-image: linear-gradient(rgba(0,0,255,0.5), rgba(255,0,0,0.5)),
+    url(../HTML/aaa.jpg), url(../HTML/aaa.jpg);
+    background-size: cover, 20%, cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed, fixed, scroll;
+    background-position: left, right bottom;
+}

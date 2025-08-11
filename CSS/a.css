@@ -1,0 +1,48 @@
+/*Uinversal Selector*/
+* {}
+
+body {
+    background-color: aquamarine;
+}
+
+/*Descendant Selector*/
+div h1 {
+    color: aliceblue;
+}
+
+/*Class Selector*/
+.p1 h1 {
+    color: aqua;
+}
+
+.font h1 {
+    font-size: 40px;
+}
+
+/*Id Selector*/
+#p2 h1 {
+    color: black;
+}
+
+/*Child Selector*/
+ul>li {
+    color: antiquewhite;
+}
+
+/*Attribute Selector*/
+input[type="text"] {
+    background-color: brown;
+}
+
+/*Attribute Selector*/
+h2,
+h3,
+h4 {
+    color: blue
+}
+
+/*Pseudo Selector*/
+a:hover {
+    color: palevioletred;
+}
+

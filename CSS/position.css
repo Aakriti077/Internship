@@ -1,0 +1,54 @@
+img{
+    height: 300px;
+    width: 300px;
+}
+
+nav ul li{
+    display: block;
+    float: left;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    background-color: greenyellow;
+    color: aliceblue;
+}
+
+figure{
+    position: relative;
+}
+
+figcaption{
+    position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 3;
+        color: white;
+        padding: 10px;
+}
+
+figure div{
+    background-color: wheat;
+        height: 50px;
+        width: 500px;
+        left: 10px;
+        bottom: 10px;
+        position: absolute;
+        z-index: 1;
+}
+
+.up-arrow{
+    position: fixed;
+    right: 30px;
+    background-color: aqua;
+    padding: 5px 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 100%;
+    right: 30px;
+    bottom: 0px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}

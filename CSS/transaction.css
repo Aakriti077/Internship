@@ -1,0 +1,51 @@
+/* img{
+    /* -o-transform: translate(220px, 200px); */
+    /* transform: translate(220px, 300px); */
+    /* transform: scale(1,2); */
+    /* transform: rotate(90deg);
+    transform: skew(0deg, 20deg); */
+/* }  */
+
+
+section{
+    perspective: 1000px;
+    padding-left: 200px;
+}
+
+.buckets{
+        background-color: antiquewhite;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        transform: rotateX(74deg) rotateY(1deg) rotateZ(18deg);
+        left: 15%;
+        
+}
+
+.bucket{
+    width: 155px;
+    height: 155px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+}
+
+.bucket:nth-child(odd){
+    background-color:aqua ;
+}
+.bucket:nth-child(even) {
+    background-color: aquamarine;
+}
+
+.bucket:before {
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    transition: all 0.5s;
+    content: '';
+}
+
+.bucket:hover::before{
+    background-color: darkorange;
+    transform: translate3d(0,0,10px);
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.5)
+}

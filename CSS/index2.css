@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.m-f{
+    font-family: "Aclonica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.header{
+    height: 100vh;
+    color: rgb(3, 8, 13);
+}
+
+.header-content{
+    padding-top: 25%;
+    text-align: center;
+}
+.header-content h1, .intro-content h1, .contact h1{
+    font-size: 42px;
+}
+.header-content h2 {
+    line-height: 100px;
+}
+.header-content h2 span{
+    color: #18818a;
+    line-height: 14px;
+}
+.btn{
+    background-color: transparent;
+    border: 3px solid #000000;
+    padding: 15px 35px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    transition: all 400ms ease-in-out;
+}
+
+.btn-fill{
+    background-color: rgb(255, 250, 250);
+    color: #000000;
+}
+
+.btn-fill:hover{
+    background-color: rgba(250, 241, 138, 0.758);
+    border-color: transparent;
+}
+
+.btn-trans:hover{
+    background-color: rgba(250, 241, 138, 0.758);
+        border-color: transparent;
+}
+.intro{
+    background-color: white;
+    padding: 15vh ;
+}
+.intro-content{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro-content div{
+    width: 50%;
+}
+.intro-img img{
+    height: 40vh;
+    width: 40vh;
+}
+.intro-text p{
+    text-align: justify;
+    color: #18818a;
+    line-height: 30px;
+}
+.services{
+    background-color: antiquewhite;
+    height: 50vh;
+    clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -12vh;
+}
+.service-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bucket{
+    width: 25%;
+    margin: 150px 3%;
+    color: #114d5c;
+}
+.bucket p{
+    color: #05090a;
+    text-align: justify;
+    line-height: 25px;
+
+}
+.contact{
+    background-color: #ffffff;
+    padding: 10vh 0;
+    text-align: center;
+}
+
+input[type='text'], input[type='email'], textarea{
+    width: 100%;
+    padding: 12px;
+    border-color: 1 px skyblue;
+
+}
+.contact-section div{
+    padding: 10px 0;
+}
+.btn-submit{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+}
+.btn-submit:hover {
+    background-color: antiquewhite;
+    color: #000;
+    border: none;
+}
+
+footer {
+    background-color: antiquewhite;
+    clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -10vh;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .header-content {
+            padding-top: 45%;
+            text-align: center;
+        }
+
+        .intro-content{
+            display: block;
+            height: 65vh;
+        }
+        .intro-content div{
+            width: 100%;
+        }
+        .intro h1{
+            text-align: center;
+        }
+        .services{
+            height: 95vh;
+            clip-path: polygon(0 0, 15% 0, 50% 8%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
+
+        .service-content{
+            display: block;
+            padding-top: -1px;
+            margin-top: -20vh;
+        }
+        .bucket{
+            width: 100%;
+            margin: 20px 3% ;
+            padding-top: 40px;
+        }
+        .bucket h1{
+            margin-top: 20px;
+        }
+}

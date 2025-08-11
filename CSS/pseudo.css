@@ -1,0 +1,49 @@
+a:link{
+background-color: red;
+text-decoration: none;
+color: wheat;
+}
+
+a:hover{
+    background-color: saddlebrown;
+    color: blue;
+}
+
+a:active{
+    background-color: navajowhite;
+    color: forestgreen;
+}
+
+a:visited{
+    color: black;
+}
+
+ul li{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+ul>li:first-child{
+    color: red;
+}
+
+ul>li:nth-child(odd){
+    color: palevioletred;
+}
+
+ul>li:last-child {
+    color: yellow;
+}
+
+p::first-letter{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p::first-line{
+    background-color: beige;
+}
+
+p::after{
+    content: 'read more..';
+}

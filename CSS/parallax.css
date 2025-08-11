@@ -1,0 +1,81 @@
+/* img{
+    width: 400px;
+    height: 500px;
+    clip-path: polygon( 0 0 ,  100% 0 , 100% 50%, 75% 100%, 0 100%);
+} */
+
+/* button{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+}
+
+.btn{
+    clip-path: polygon(0 0, 29% 0, 72% 0, 100% 0, 100% 60% 100%, 0 100%);
+    transition: clip-path 1s ease-in;
+}
+
+.btn:hover{
+    background-color: blue;
+} */
+
+
+/* parallax */
+*{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+header h1{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: aliceblue;
+}
+
+header::before{
+    background-image: url(../HTML/aaa.jpg);
+    background-size: cover;
+    transform: translateZ(-1px) scale(1);
+    z-index: -1;
+    position: fixed;
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+}
+
+.container{
+    position: absolute;
+    z-index: 2;
+    top: 70vh;
+    background-color: rebeccapurple;
+    padding: 30px;
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0, 50% 20%);
+    padding: 15%;
+
+}

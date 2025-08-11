@@ -1,0 +1,20 @@
+.triangle{
+    /* border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 100px solid blue; */
+    /* border-top: 40px solid red; */
+    clip-path: circle(40% at 50% 50%);
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.shape{
+    padding: 20px;
+    /* background-color: aqua; */
+    border: 5px solid magenta;
+    border-radius: 70%;
+    float: left;
+    margin: 5px;
+    shape-outside: margin-box;
+}
