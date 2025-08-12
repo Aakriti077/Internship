@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position & z-index Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        /* 1️⃣ Fixed Navbar (Facebook-like) */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #4267B2;
+            color: white;
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        /* Layout */
+        .container {
+            display: flex;
+            margin-top: 70px;
+            /* space for navbar */
+            padding: 20px;
+        }
+
+        /* 2️⃣ Sticky Sidebar (Amazon-like) */
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            /* sticks after scrolling past navbar */
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            height: fit-content;
+        }
+
+        /* Main content area */
+        .content {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        /* 3️⃣ Absolute Button (Netflix-like) */
+        .thumbnail {
+            position: relative;
+            /* base for absolute positioning */
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail img {
+            width: 300px;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            z-index: 5;
+        }
+
+        /* Just for demo: tall content */
+        .filler {
+            height: 1500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fixed Navbar -->
+    <div class="navbar">
+        <h1>Facebook-like Navbar</h1>
+    </div>
+
+    <div class="container">
+        <!-- Sticky Sidebar -->
+        <div class="sidebar">
+            <h3>Amazon Filters</h3>
+            <ul>
+                <li>Price</li>
+                <li>Brand</li>
+                <li>Ratings</li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="content">
+            <h2>Netflix-like Thumbnails</h2>
+            <div class="thumbnail">
+                <img src="https://via.placeholder.com/300x200" alt="Movie">
+                <div class="play-button">▶ Play</div>
+            </div>
+            <div class="thumbnail">
+                <img src="https://via.placeholder.com/300x200" alt="Movie">
+                <div class="play-button">▶ Play</div>
+            </div>
+
+            <!-- Scroll filler -->
+            <div class="filler"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

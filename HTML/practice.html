@@ -7,7 +7,61 @@
     <link rel="stylesheet" href="../CSS/practice.css">
 </head>
 <body>
-  
- 
+    <div class="wrap">
+    <header>
+        <div class="header-left"> 
+            <a href="practice.html">
+            <img src="../img/logo.png" alt="my logo" class="logo">
+            </a>
+            <div class="divider hide-mobile" ></div>
+            <a href="#" class="home hide-mobile">Home</a>
+            </div>
+
+            <nav>
+               <a href="#" class="menu-open hide-desktop">
+                <img src="../img/menu-bar.png" alt="Open" class="menu">
+               </a> 
+               <ul>
+                <li class="hide-desktop">
+                    <a href="#" class="menu-close">
+                        <img src="../img/cross.png" alt="close" class="menu">
+                    </a>
+                    </li>
+                    <li><a href="#">Our Food</a></li>
+                    <li><a href="#">Ingrediens</a></li>
+                    <li><a href="#">Studies</a></li>
+                    <li><a href="#">FAQ</a></li>
+                
+               </ul>
+            </nav>
+    </header>
+    <main>
+        <h1 class="m-f">This is my cutie cat <span class="meow">"Meow"</span></h1>
+        <p class="subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officiis cupiditate, illo, ipsa explicabo non quo perferendis in ratione rem nulla eius velit!
+             Maxime maiores eveniet nisi, nulla sit dicta blanditiis.
+            </p>
+            <a href="#" class="primary-cat">Click Meow</a>
+    </main>
+    <div class="cat-container">
+        <div class="cat">
+            <img src="../img/cat.png" alt="Cat illustration" class="catimg">
+            <div class="inner-circle"></div>
+            <div class="outer-circle"></div>
+        </div>
+    </div>
+</div>
+<script>
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.querySelector('.menu-open');
+    const closeBtn = document.querySelector('.menu-close');
+
+    menuBtn.addEventListener('click', () =>{
+        menu.classList.add('open')
+    })
+    closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open')
+             })
+</script>
 </body>
 </html>
