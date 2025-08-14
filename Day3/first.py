@@ -130,12 +130,41 @@ for i in b:
 print(a)
 
 #Abbreviation Maker
-sen = input("enter a sentence to create abbre")
-a = sen.split()
+word = input("enter a sentence to create: ")
+a = word.split()
 b = ""
 for i in a:
     b += i[0]
 print(b)
+
+#Word Replacer
+a = input("Enter your sentence: ")
+b = input("Enter word you want to replace: ")
+c = input("Enter your replaced word: ")
+d = a.replace(b,c)
+print("Replaced word: ", d)
+
+#username generator
+firstname = input("Enter your First Name: ")
+lastname = input("Enter your Last Name: ")
+birthdate = input("Enter your Birth Date: ")
+name = firstname.lower() + lastname.lower() + birthdate
+print(f"The username is: {name}")
+
+#password generator
+import random
+
+random1 = random.randint(1, 10)
+word = input("Enter your desired word: ")
+word1 = word[::-1] + word.upper() + str(random1)
+print(word1)
+
+#Pig latin
+word = input("Enter your word: ")
+a = word[1:] + word [0] + "ay"
+print(a)
+
+
 
 
 
