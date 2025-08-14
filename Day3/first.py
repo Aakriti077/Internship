@@ -124,10 +124,21 @@ print(f"The number of word is: '{len(text.split())}'")
 #Replace vowels with "*"
 
 a = input("Write your sentence: ")
-b = ["a","e","i","o","u"]
-for i in b:
-    a = a.replace(i , "*")
+a = a.replace("a" , "*")
+a = a.replace("e" , "*")
+a = a.replace("i" , "*")
+a = a.replace("o" , "*")
+a = a.replace("u" , "*")
 print(a)
+
+
+
+
+
+# b = ["a","e","i","o","u"]
+# for i in b:
+#     a = a.replace(i , "*")
+# print(a)
 
 #Abbreviation Maker
 word = input("enter a sentence to create: ")
