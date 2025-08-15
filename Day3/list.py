@@ -17,7 +17,7 @@ print(items[0])
 
 #access the middle emement of list
 items = ["apple" , "banana" , "cherry" , "grapes" , "mango"]
-print(items[:-1])
+print(items[2])
 
 #access last element of list
 items = ["apple" , "banana" , "cherry" , "grapes" , "mango" , "orange"]
@@ -42,7 +42,8 @@ print(elements)
 #concatenate two lists
 list1 = ["dog" , "cat" , "deer" , "elephant"]
 list2 = ["fish" , "frog" , "snake"]
-print(list1+list2)
+list2.extend(list1)
+print(list2)
 
 #repeat list 3 times
 list1 = ["apple" , "samsung" , "redmi"]
@@ -83,7 +84,7 @@ print(fruits)
 fruits.sort()       #sorts in alphabetical order
 print(fruits)
 
-x= numbers.count(5)     #count number of 5
+x= numbers.count(5)     #count number of 5 in list
 print(x)
 
 x = fruits.index("cherry")      #check which index cherry is in
@@ -127,7 +128,7 @@ fruit = "apple"
 a = list(fruit)
 print(a)
 
-b = list(range(1,5))
+b = list(range(1,6))
 print(b)
 
 

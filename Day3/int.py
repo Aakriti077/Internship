@@ -112,3 +112,32 @@ import random
 random1 = int(random.randint(1,100))
 print(f"The random number is: {random1}")
 
+#even or odd
+text1 = int(input("Enter your number: "))
+if text1 % 2 == 0:
+    print("Number is even.")
+else:
+    print("Number is odd.")
+
+#find compound interest
+principal = int(input("Enter the principal: "))
+rate = int(input("Enter your rate: "))
+interest = int(input("Enter your interest: "))
+time = int(input("Enter your time: "))
+ci = principal*(1+rate/interest)**(interest*time)
+print(f"The compound interest is: {ci}")
+
+#convert
+total_second = int(input("Enter your time in seconds: "))
+hours = total_second // 3600
+minute = (total_second % 3600) //60 
+seconds = total_second % 6
+print(f"The total second is: {hours}:{minute}:{seconds}")
+
+#calculate distance
+value1 = int(input("Enter value of x1: "))
+value2 = int(input("Enter value of x2: "))
+value3 = int(input("Enter value of y1: "))
+value4 = int(input("Enter value of y2: "))
+distance1 = ((value2-value1)**2+(value4-value3)**2)**0.5
+print(f"The distance is: {distance1}")
