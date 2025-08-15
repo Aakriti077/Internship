@@ -91,7 +91,6 @@ input1 = ("happy" , "sad", "angry")
 final = tuple(reversed(input1))
 print(final)
 
-
 #Create a tuple from user input where values are comma-separated
 text = input("Enter your tuple: ")
 a=tuple(text)
