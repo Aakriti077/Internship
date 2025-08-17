@@ -59,4 +59,25 @@ set2 = {1,2,3,4,5,6,7}
 subset1 = set1.issubset(set2)
 print(subset1)
 
+# find elements that are in either of two sets but not in both
+#symmetric difference
+set1 = {1,2,3,4,5,8}
+set2 = {1,2,3,4,5,6,7}
+result1 = set1^set2
+print(result1)
+
+#create a set of squares from 1 to 10
+set_square = {}
+
+#find all unique words using a set
+sentence = "I love programming and I love python"
+result = set(sentence.split())
+print(result)
+
+#checks if two strings are anagrams using sets\
+word1 = input("Enter your first word: ")
+word2 = input("Enter your second word: ")
+output = set(word1) == set(word2)
+print(output)
+
 

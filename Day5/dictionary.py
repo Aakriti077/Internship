@@ -46,10 +46,12 @@ letter1["a"]=letters.count("a")
 letter1["n"]=letters.count("n")
 print(letter1)
 
-
+#key with the maximum value
 my_dict = {"apple":1, "banana":2, "cherry":3}
 value1 = max(my_dict)
 print(value1)
+
+
 
 
 
