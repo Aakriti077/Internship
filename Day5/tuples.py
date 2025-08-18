@@ -6,7 +6,7 @@ print(colors)
 print(colors[1])
 print(colors[4])
 
-#Create a tuple with a single element. Verify its type is tuple \
+#Create a tuple with a single element. Verify its type is tuple 
 item1 = ("Hello",)
 print(type(item1))
 

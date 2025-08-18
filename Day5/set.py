@@ -74,7 +74,7 @@ sentence = "I love programming and I love python"
 result = set(sentence.split())
 print(result)
 
-#checks if two strings are anagrams using sets\
+#checks if two strings are anagrams using sets
 word1 = input("Enter your first word: ")
 word2 = input("Enter your second word: ")
 output = set(word1) == set(word2)

@@ -13,7 +13,8 @@ print(information)
 
 information["city"]= "Paris"  #change city 
 print(information)
-
+print("aaks")
+print(information.get("name"))
 information.pop("age")
 print(information)
 
