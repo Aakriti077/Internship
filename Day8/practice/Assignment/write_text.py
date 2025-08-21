@@ -23,7 +23,7 @@ with open("data.txt","r") as f:
 
 #Use a loop with .readline() or .readlines() to display all lines one by one.
 with open("data.txt","r") as f:
-    size_to_read = 99
+    size_to_read = 10
     f_contents = f.read(size_to_read)
 
     while len(f_contents) > 0:    
@@ -46,20 +46,22 @@ with open("data.txt","r") as f:
 
 #program to count the number of words in data.txt 
 with open("data.txt","r") as f:
-    content = f.read()
-    words = content.split()
+    f_content = f.read()
+    words = f_content.split()
     word_count = len(words)
     print(word_count)
 
-#program to find and print the longest word in data.txt 
+# #program to find and print the longest word in data.txt 
 with open("data.txt","r") as f:
-    content = f.read()
-    words = content.split()
-    max_len = len(max(words, key=len))
-    print(content)
+    f_content = f.read()
+    words = f_content.split()
+    length1 = (max(words, key=len))
+    print(f"The longest word is: {length1}")
+    # word1 = len(length1)
+    # print(f"The number of words is: {word1}")
+    
 
 #Use the tell() and seek() methods
-
 #Print the current file pointer position.
 with open("data.txt","r") as f:
     # print("Cursor is in: ",f.tell())
@@ -68,15 +70,9 @@ with open("data.txt","r") as f:
 
 #Move the file pointer to the beginning and re-read the first line.
     f.seek(0)
-    f_contents = f.readline
+    f_contents = f.readline()
+    f.tell()
+    print(f.tell())
     print(f_contents)
 
-#to write numbers into a file and calculate their sum with exception handling
-try:
-    with open("datas.txt","r") as f:
-        f_content = f.read()
-        print(f"File content: {f_content}")
-except FileNotFoundError:
-    print("The file does not exist")
-finally:
-    print("File is here")
+
