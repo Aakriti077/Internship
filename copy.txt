@@ -1,0 +1,4 @@
+Python is fun.
+File handling makes it powerful.
+Exception handling makes it reliable.
+aedadhyghellopython -u "c:\Users\akrit\OneDrive\Desktop\intern\Day8\practice\Assignment\write_text.py"hellogjvasdadsasda
