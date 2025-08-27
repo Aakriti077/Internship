@@ -136,7 +136,7 @@ class CryptoPayment(Payment):
 l1 = [CreditCardPayment() , PayPalPayment() , CryptoPayment()]
 for i in l1:
     i.process_payment()
-
+    
 
 
 # Create classes: TextFileHandler , JSONFileHandler , CSVFileHandler
