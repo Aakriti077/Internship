@@ -1,4 +1,1 @@
-result = {}
-# for i in range(5):
-#         result[i] = i**2
-# print(result)
+print([i for i in range(100) if i % 3 == 0 and i % 5 == 0])
